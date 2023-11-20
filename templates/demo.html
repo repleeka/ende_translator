@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepL-like Translator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='demo.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>DeepL-like Translator</h1>
+        </header>
+        <main>
+            <div class="translation-container">
+                <div class="input-section">
+                    <textarea id="input-text" placeholder="Enter text to translate"></textarea>
+                </div>
+                <div class="output-section">
+                    <textarea id="output-text" placeholder="Translated text will appear here" readonly></textarea>
+                </div>
+                <button id="translate-btn">Translate</button>
+            </div>
+        </main>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
