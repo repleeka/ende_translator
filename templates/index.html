@@ -1,0 +1,35 @@
+{% extends "nav_bar.html" %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+
+<div id="idx_div1">
+    <h1 id="idx_h1"> Add String to Reverse</h1>
+    <form action="/reverse" METHOD="POST">
+        <div id="idx_div2">
+            <textarea name="textToTranslate" id="idx_inputText1" placeholder="Enter text to reverse"
+                required></textarea>
+        </div>
+        <div id="idx_div3">
+            <input type="submit" value="Reverse" id="idx_translate"></input>
+        </div>
+        <div id="idx_div4">
+            <h1>Reversed Text:</h1>
+            <!-- only printing the latest added element in the list -->
+            <strong>{{ reversed_text[-1] if reversed_text else '' }}</strong>
+        </div>
+    </form>
+    <br /><br />
+    <div id="idx_div3">
+        <h1>Reverse History:</h1>
+        <ol>
+            {% for i in reversed_text %}
+            <li>{{i}}</li>
+            {% endfor %}
+        </ol>
+        <form action="/clear" method="POST" style="display: inline;">
+            <input type="submit" value="Clear History">
+        </form>
+    </div>
+</div>
+{% endblock %}
