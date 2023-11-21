@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block title %}{{title}}{% endblock %}
+{% block content %}
+<section id="about">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12 col-sm-12">
+                <div class="wow bounceIn section-title">
+                    <h1>welcome to new app</h1>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="wow fadeInUp col-md-6 col-sm-12" data-wow-delay="0.4s">
+                <h2>Our Mobile App Team</h2>
+                <h3 class="wow fadeInUp" data-wow-delay="0.8s">App Starter page is provided by templatemo that
+                    can be used for any site.</h3>
+                <p class="wow fadeInUp" data-wow-delay="0.4s">This is a responsive <a
+                        href="https://plus.google.com/+templatemo" target="_blank">HTML CSS template</a>
+                    designed for your mobile app pages. You can modify and use it to fit your needs.</p>
+            </div>
+
+            <div class="wow fadeInUp col-md-3 col-sm-6" data-wow-delay="0.4s">
+                <div class="about-thumb">
+                    <img src="{{url_for('static', filename='img/team-img1.jpg')}}" class="img-responsive" alt="Team">
+                    <div class="about-overlay">
+                        <h3>Sandar Lynn</h3>
+                        <h4>UI Designer</h4>
+                        <ul class="social-icon">
+                            <li><a href="#" class="fa fa-facebook"></a></li>
+                            <li><a href="#" class="fa fa-instagram"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wow fadeInUp col-md-3 col-sm-6" data-wow-delay="0.4s">
+                <div class="about-thumb">
+                    <img src="{{url_for('static', filename='img/team-img2.jpg')}}" class="img-responsive" alt="Team">
+                    <div class="about-overlay">
+                        <h3>Candy </h3>
+                        <h4>UX Specialist</h4>
+                        <ul class="social-icon">
+                            <li><a href="#" class="fa fa-pinterest"></a></li>
+                            <li><a href="#" class="fa fa-behance"></a></li>
+                            <li><a href="#" class="fa fa-google-plus"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Divider Section -->
+
+<section id="divider">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-offset-2 col-md-8 col-sm-12">
+                <h2 class="wow fadeInUp" data-wow-delay="0.4s">Praesent tempor nec orci eu condimentum.
+                    Vestibulum varius lorem sed odio lacinia, ut efficitur tellus convallis. Phasellus
+                    convallis est nisi, sit amet accumsan ipsum elementum quis. Mauris ac sem mi.</h2>
+                <a href="#screenshot" class="wow fadeInUp section-btn btn btn-success smoothScroll"
+                    data-wow-delay="0.8s">Learn More</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,6 +1,5 @@
-{% extends "nav_bar.html" %}
+{% extends "base.html" %}
 {% block title %}{{ title }}{% endblock %}
-
 {% block content %}
 
 <div id="idx_div1">
@@ -14,7 +13,7 @@
                  the user type text in textarea and press enter, 
                  then the automatically get translated -->
             <textarea name="textToTranslate" id="idx_inputText1" placeholder="Enter text to translate" required
-                onkeydown="if (event.keyCode==13) this.form.submit()"></textarea>
+                onkeydown="if (event.keyCode==13) this.form.submit()">{% if text %}{{ text }}{% endif %}</textarea>
         </div>
         <div>
             <div>
