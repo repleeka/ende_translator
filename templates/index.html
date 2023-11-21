@@ -4,22 +4,28 @@
 {% block content %}
 
 <div id="idx_div1">
-    <h1 id="idx_h1"> Add String to Reverse</h1>
-    <form action="/reverse" METHOD="POST">
+    <h1 id="idx_h1"> Add Text to Translate</h1>
+    <form action="/translate" METHOD="POST">
         <div id="idx_div2">
-            <textarea name="textToTranslate" id="idx_inputText1" placeholder="Enter text to reverse"
+            <textarea name="textToTranslate" id="idx_inputText1" placeholder="Enter text to translate"
                 required></textarea>
         </div>
         <div id="idx_div3">
-            <input type="submit" value="Reverse" id="idx_translate"></input>
+            <input type="submit" value="translate" id="idx_translate"></input>
         </div>
         <div id="idx_div4">
-            <h1>Reversed Text:</h1>
-            <!-- only printing the latest added element in the list -->
-            <strong>{{ reversed_text[-1] if reversed_text else '' }}</strong>
+            <h1>Tranlated Text in {{dest}}:</h1>
+            <!-- <strong>{{ reversed_text[-1] if reversed_text else '' }}</strong> -->
+            <div id="idx_div2">
+                <textarea id="output-text" placeholder="Translated text will appear here" readonly>
+                {{ dest_text }}
+                
+                {{ dest_pronunciation }}
+                </textarea>
+            </div>
         </div>
     </form>
-    <br /><br />
+    <!-- <br /><br />
     <div id="idx_div3">
         <h1>Reverse History:</h1>
         <ol>
@@ -30,6 +36,6 @@
         <form action="/clear" method="POST" style="display: inline;">
             <input type="submit" value="Clear History">
         </form>
-    </div>
+    </div> -->
 </div>
 {% endblock %}

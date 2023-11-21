@@ -1,5 +1,6 @@
-from flask import Flask, redirect, render_template, request
-from datetime import datetime
+from flask import Flask, render_template, request
+from googletrans import Translator
+import json
 
 app = Flask(__name__)
 
@@ -23,6 +24,23 @@ def reverse():
         # appending and reversing the latest entry in the list
         reversed_text.append("{}".format(text[::-1]))
         return render_template('index.html', reversed_text=reversed_text, title=title)
+
+
+@app.route('/translate', methods=['POST', 'GET'])
+def translate():
+    title = "Translator"
+    translator = Translator()
+    src = 'en'
+    dest = 'ja'
+    src_text = request.form.get('textToTranslate')
+    if not src_text:
+        return render_template('index.html', title=title)
+    else:
+        # translating the text
+        dest_text = translator.translate(src_text, dest=dest, src=src).text
+        dest_pronunciation = translator.translate(
+            src_text, dest=dest, src=src).pronunciation
+        return render_template('index.html', dest_text=dest_text, dest_pronunciation=dest_pronunciation, title=title)
 
 
 @app.route('/clear', methods=['POST', 'GET'])
