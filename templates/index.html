@@ -4,38 +4,31 @@
 {% block content %}
 
 <div id="idx_div1">
-    <h1 id="idx_h1"> Add Text to Translate</h1>
     <form action="/translate" METHOD="POST">
         <div id="idx_div2">
-            <textarea name="textToTranslate" id="idx_inputText1" placeholder="Enter text to translate"
-                required></textarea>
+            <select>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+            </select>
+            <!-- the event.keyCode==13 functions as
+                 the user type text in textarea and press enter, 
+                 then the automatically get translated -->
+            <textarea name="textToTranslate" id="idx_inputText1" placeholder="Enter text to translate" required
+                onkeydown="if (event.keyCode==13) this.form.submit()"></textarea>
         </div>
-        <div id="idx_div3">
-            <input type="submit" value="translate" id="idx_translate"></input>
-        </div>
-        <div id="idx_div4">
-            <h1>Tranlated Text in {{dest}}:</h1>
-            <!-- <strong>{{ reversed_text[-1] if reversed_text else '' }}</strong> -->
-            <div id="idx_div2">
+        <div>
+            <div>
+                <select>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                </select>
                 <textarea id="output-text" placeholder="Translated text will appear here" readonly>
-                {{ dest_text }}
+                {{dest_text}}
                 
-                {{ dest_pronunciation }}
+                {{dest_pronunciation}}
                 </textarea>
             </div>
         </div>
     </form>
-    <!-- <br /><br />
-    <div id="idx_div3">
-        <h1>Reverse History:</h1>
-        <ol>
-            {% for i in reversed_text %}
-            <li>{{i}}</li>
-            {% endfor %}
-        </ol>
-        <form action="/clear" method="POST" style="display: inline;">
-            <input type="submit" value="Clear History">
-        </form>
-    </div> -->
 </div>
 {% endblock %}
