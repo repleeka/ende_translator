@@ -17,12 +17,6 @@ def about():
     return render_template("about.html", title=title)
 
 
-@app.route('/screenshot')
-def screenshot():
-    title = 'Screenshot'
-    return render_template('screenshot.html', title=title)
-
-
 @app.route('/pricing')
 def pricing():
     title = "Pricing"
@@ -33,7 +27,6 @@ def pricing():
 def subscribe():
     title = "Newsletter"
     return render_template('subscribe.html', title=title)
-
 
 # reversed_text = []
 
