@@ -1,10 +1,11 @@
 from flask import Flask, render_template, request
-from googletrans import Translator
+from googletrans import Translator, LANGUAGES, LANGCODES
 import json
 
 app = Flask(__name__)
 
-
+langs = LANGUAGES
+lang_codes = LANGCODES
 @app.route('/')
 def index():
     title = "Home"
@@ -65,7 +66,3 @@ def translate():
 #     title = "Clear"
 #     txt = reversed_text.clear()
 #     return render_template('index.html', txt=txt, title=title)
-
-
-# if __name__ == "__main__":
-#     app.run(debug=False, host='0.0.0.0')

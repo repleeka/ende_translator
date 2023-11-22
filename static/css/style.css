@@ -5,6 +5,9 @@ App Starter Template
 http://www.templatemo.com/tm-492-app-starter
 
 */
+/* Import Google Font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
 
 body {
   background: #1c1c1c;
@@ -353,37 +356,156 @@ a:focus {
 #home .section-btn:hover {
   background: transparent !important;
 }
+/* -------------------------------------
+Translator Section
+---------------------------------------- */
 
-/* --------------------------------------
-   Translator Section
------------------------------------------ */
-#idx_div1 {
-  max-width: 600px;
-  margin: 50px auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+.body {
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	min-height: 100vh;
+	background: #ffffff;
+}
+.container-translator {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px;
+	background: #fff;
+	border-radius: 7px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.01);
+}
+.wrapper-translator {
+	width: 100%;
+}
+.wrapper-translator .text-input {
+	display: flex;
+	gap: 1rem;
+}
+/* .text-input .to-text {
+	border-radius: 0px;
+	border-left: 1px solid #ccc;
+} */
+.text-input textarea {
+	height: 250px;
+	width: 100%;
+	outline: none;
+	resize: none;
+	border-radius: 6px;
+	font-size: 18px;
+	padding: 10px 15px;
+}
+.text-input textarea::placeholder {
+	color: #b7b6b6;
+}
+.controls,
+li,
+.icons,
+.icons i {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.controls {
+	list-style: none;
+	padding: 12px 15px;
+}
+.controls .row .icons {
+	width: 38%;
+}
+.controls .row .icons i {
+	width: 50px;
+	color: #adadad;
+	font-size: 14px;
+	cursor: pointer;
+	transition: transform 0.2s ease;
+	justify-content: center;
+}
+.controls .row.from .icons {
+	padding-right: 15px;
+	border-right: 1px solid #ccc;
+}
+.controls .row.to .icons {
+	padding-left: 15px;
+	border-left: 1px solid #ccc;
+}
+.controls .row select {
+	color: #333;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	background: none;
+	padding-left: 5px;
+}
+.text-input textarea::-webkit-scrollbar {
+	width: 4px;
+}
+.controls .row select::-webkit-scrollbar {
+	width: 8px;
+}
+.text-input textarea::-webkit-scrollbar-track,
+.controls .row select::-webkit-scrollbar-track {
+	background: #fff;
+}
+.text-input textarea::-webkit-scrollbar-thumb {
+	background: #ddd;
+	border-radius: 8px;
+}
+.controls .row select::-webkit-scrollbar-thumb {
+	background: #999;
+	border-radius: 8px;
+	border-right: 2px solid #ffffff;
+}
+.controls .exchange {
+	color: #adadad;
+	cursor: pointer;
+	font-size: 16px;
+	transition: transform 0.2s ease;
+}
+.controls i:active {
+	transform: scale(0.9);
+}
+.btn-translator {
+	padding: 14px;
+	outline: none;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	margin-top: 20px;
+	font-size: 17px;
+	border-radius: 5px;
+	background: #5372f0;
 }
 
-textarea {
-  width: 100%;
-  height: 150px;
-  margin-bottom: 10px;
-  resize: none;
-}
-
-button {
-  padding: 8px 16px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-select {
-  padding: 8px;
-  margin-bottom: 20px;
-  /* width: 100%; */
-  box-sizing: border-box;
+@media (max-width: 660px) {
+	.container {
+		padding: 20px;
+	}
+	.wrapper .text-input {
+		flex-direction: column;
+	}
+	.text-input .to-text {
+		border-left: 0px;
+		border-top: 1px solid #ccc;
+	}
+	.text-input textarea {
+		height: 200px;
+	}
+	.controls .row .icons {
+		display: none;
+	}
+	.container button {
+		padding: 13px;
+		font-size: 16px;
+	}
+	.controls .row select {
+		font-size: 16px;
+	}
+	.controls .exchange {
+		font-size: 14px;
+	}
 }
 
 /*---------------------------------------
