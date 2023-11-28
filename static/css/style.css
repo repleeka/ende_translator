@@ -10,7 +10,7 @@ http://www.templatemo.com/tm-492-app-starter
 
 
 body {
-  background: #1c1c1c;
+  background: #ffffff;
   font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -47,7 +47,7 @@ h6 {
 }
 
 h1 {
-  color: #ffffff;
+  color: #000000;
   font-size: 52px;
   letter-spacing: 2px;
   padding-bottom: 10px;
@@ -55,12 +55,12 @@ h1 {
 }
 
 h2 {
-  color: #f0f0f0;
+  color: #000000;
   font-size: 32px;
 }
 
 h3 {
-  color: #535bd4;
+  color: #000000;
   font-size: 22px;
   line-height: 32px;
   padding-bottom: 4px;
@@ -71,14 +71,14 @@ h4 {
 }
 
 p {
-  color: #999;
+  color: #030303;
   font-size: 20px;
   font-weight: 300;
   line-height: 30px;
 }
 
 hr {
-  border-bottom-color: #999;
+  border-bottom-color: #000000;
   width: 100px;
 }
 
@@ -96,12 +96,12 @@ hr {
 }
 
 .section-btn:hover {
-  background: transparent;
-  border-top-color: #ffffff;
+  background: black;
+  border-top-color: #000000;
   border-right-color: #222;
-  border-bottom-color: #ffffff;
+  border-bottom-color: #000000;
   border-left-color: #222;
-  color: #ffffff;
+  color: #000000;
 }
 
 
@@ -114,7 +114,7 @@ html {
 }
 
 a {
-  color: #535bd4;
+  color: #000000;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -124,7 +124,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #3FF;
+  color: #000000;
   outline: none;
 }
 
@@ -157,18 +157,9 @@ a:focus {
   text-align: center;
 }
 
-#about,
-#screenshot,
-#divider,
-#pricing,
-#newsletter {
+#about {
   padding-top: 100px;
   padding-bottom: 100px;
-}
-
-#divider,
-#pricing {
-  text-align: center;
 }
 
 
@@ -193,7 +184,7 @@ a:focus {
 .sk-spinner-pulse {
   width: 60px;
   height: 60px;
-  background-color: #1dc9e3;
+  background-color: #000000;
   border-radius: 100%;
   -webkit-animation: sk-pulseScaleOut 1s infinite ease-in-out;
   animation: sk-pulseScaleOut 1s infinite ease-in-out;
@@ -236,10 +227,12 @@ a:focus {
   border: none;
   box-shadow: none;
   margin: 0 !important;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-default .navbar-brand {
-  color: #535bd4;
+  color: #000000;
   font-size: 26px;
   font-weight: bold;
   text-transform: uppercase;
@@ -249,11 +242,11 @@ a:focus {
 }
 
 .navbar-default .navbar-brand span {
-  color: #1dc9e3;
+  color: #000000;
 }
 
 .navbar-default .navbar-nav li a {
-  color: #656565;
+  color: #000000;
   font-size: 18px;
   font-weight: 500;
   line-height: 50px;
@@ -265,19 +258,19 @@ a:focus {
 }
 
 .navbar-default .navbar-nav>li a:hover {
-  color: #1dc9e3;
+  color: #000000;
 }
 
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus {
-  color: #656565;
+  color: #000000;
   background-color: transparent;
 }
 
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-  color: #1dc9e3;
+  color: #000000;
   background-color: transparent;
 }
 
@@ -301,10 +294,10 @@ a:focus {
 -----------------------------------------*/
 
 #home {
-  background: #535bd4 url('../images/home-bg.jpg') no-repeat;
+  /* background: #ffffff url('../images/home-bg.jpg') no-repeat; */
   background-size: cover;
   background-position: center center;
-  color: #ffffff;
+  color: #000000;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -318,11 +311,11 @@ a:focus {
 }
 
 #home .overlay {
-  background: #4776E6;
+  background: #fdfdfd;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #4776E6, #8E54E9);
+  /* background: -webkit-linear-gradient(to left, #4776E6, #8E54E9); */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #4776E6, #8E54E9);
+  /* background: linear-gradient(to left, #4776E6, #8E54E9); */
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   opacity: 0.9;
   position: absolute;
@@ -343,14 +336,13 @@ a:focus {
   padding-left: 32px;
 }
 
-#home p,
-#newsletter p {
-  color: #f0f0f0;
+#home p {
+  color: #000000;
   letter-spacing: 1px;
 }
 
 #home .section-btn {
-  background: #1dc9e3;
+  background: #000000;
 }
 
 #home .section-btn:hover {
@@ -492,12 +484,12 @@ option {
   padding: 14px;
   outline: none;
   border: none;
-  color: #fff;
+  color: #000000;
   cursor: pointer;
   margin-top: 20px;
   font-size: 17px;
   border-radius: 5px;
-  background: #5372f0;
+  background: #ffffff;
 }
 
 @media (max-width: 660px) {
@@ -534,20 +526,6 @@ option {
   .controls .exchange {
     font-size: 14px;
   }
-}
-
-/*---------------------------------------
-   Divider section              
------------------------------------------*/
-
-#divider {
-  background-color: #1dc9e3;
-}
-
-#divider p {
-  color: #666;
-  font-size: 26px;
-  line-height: 42px;
 }
 
 
@@ -650,33 +628,6 @@ footer p {
 }
 
 
-/*---------------------------------------
-   Back top         
------------------------------------------*/
-
-.go-top {
-  background-color: #ffffff;
-  box-shadow: 1px 1.732px 12px 0px rgba(0, 0, 0, .14), 1px 1.732px 3px 0px rgba(0, 0, 0, .12);
-  border-radius: 100px;
-  transition: all 1s ease;
-  bottom: 2em;
-  right: 2em;
-  color: #333;
-  font-size: 22px;
-  display: none;
-  position: fixed;
-  text-decoration: none;
-  width: 35px;
-  height: 35px;
-  line-height: 30px;
-  text-align: center;
-}
-
-.go-top:hover {
-  background: #535bd4;
-  color: #ffffff;
-}
-
 
 /*---------------------------------------
    Mobile Responsive         
@@ -726,11 +677,7 @@ footer p {
     padding-bottom: 32px;
   }
 
-  #about,
-  #divider,
-  #screenshot,
-  #pricing,
-  #newsletter {
+  #about {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -771,11 +718,6 @@ footer p {
     padding-top: 32px;
     padding-left: 0px;
   }
-
-  #pricing .pricing-plan {
-    margin-bottom: 62px;
-  }
-
 }
 
 @media (max-width: 650px) {
