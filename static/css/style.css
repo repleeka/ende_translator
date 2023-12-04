@@ -11,7 +11,8 @@ http://www.templatemo.com/tm-492-app-starter
 
 body {
   background: #ffffff;
-  font-family: 'Source Sans Pro', sans-serif;
+  /* font-family: 'Source Sans Pro', sans-serif; */
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 300;
   padding-top: 70px;
@@ -31,7 +32,7 @@ h5,
 h6,
 .navbar-default,
 .btn {
-  font-family: 'Unica One', cursive;
+  font-family: 'Poppins', cursive;
   font-weight: 400;
 }
 
