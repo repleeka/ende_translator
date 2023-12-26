@@ -16,3 +16,6 @@ This project implements an English to German translator using Flask. It utilizes
 - Install CTranslate2 from the official repository available at:
   - [CTranslate2 GitHub Repository](https://github.com/OpenNMT/CTranslate2)
 - Follow the instructions provided in the repository to install and set up CTranslate2.
+
+#### Support
+ - For any inquiries or support, please open an issue or contact [tungondugi@gmail.com](gmail.com)
