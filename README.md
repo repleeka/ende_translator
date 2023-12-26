@@ -28,5 +28,8 @@ This project implements an English to German translator using Flask. It utilizes
   - [CTranslate2 GitHub Repository](https://github.com/OpenNMT/CTranslate2)
 - Follow the instructions provided in the repository to install and set up CTranslate2.
 
+#### Neccessary Downloads 
+ - [model.bin](https://drive.google.com/file/d/1Dczq_rfDeV9zLCqbAPq5BOBYoCwkdXR9/view?usp=sharing)
+ - [sentencepiece.model](https://drive.google.com/file/d/1A15HZoYZRIzPZJ_ONls1Z-A9-0PUN4mN/view?usp=sharing)
 #### Support
  - For any inquiries or support, please open an issue or contact [tungondugi@gmail.com](gmail.com)
