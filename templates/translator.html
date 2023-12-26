@@ -6,45 +6,14 @@
     <div class="body">
         <div class="container-translator">
             <div class="wrapper-translator">
-                <ul class="controls">
-                    <li class="row from">
-                        <!-- <div class="icons">
-                            <i id="from" class="fas fa-volume-up"></i>
-                            <i id="from" class="fas fa-copy"></i>
-                        </div> -->
-                        <select name="src_language">
-                            {% for k,v in langs.items() %}
-                            <option value="{{k}}" {% if k==active_src_language %}selected{% endif %}>{{v.title()}}
-                            </option>
-                            {% endfor %}
-                        </select>
-                    </li>
-                    <li class="exchange"><i class="fas fa-exchange-alt"></i></li>
-                    <li class="row to">
-                        <select name="dest_language">
-                            {% for k,v in langs.items() %}
-                            <option value="{{k}}" {% if k==active_dest_language %}selected{% endif %}>{{v.title()}}
-                            </option>
-                            {% endfor %}
-                        </select>
-                        <!-- <div class="icons">
-                            <i id="to" class="fas fa-volume-up"></i>
-                            <i id="to" class="fas fa-copy"></i>
-                        </div> -->
-                    </li>
-                </ul>
                 <div class="text-input">
-                    <!-- the event.keyCode==13 functions as
-                     the user type text in textarea and press enter, 
-                     then the automatically get translated -->
                     <textarea name="textToTranslate" spellcheck="false" class="from-text"
                         placeholder="Enter text to translate" onkeydown="if(event.keyCode==13) {this.form.submit()}"
-                        required>{% if src_text %}{{src_text}}{% endif %}</textarea>
+                        required>{% if user_input %}{{user_input}}{% endif %}</textarea>
                     <textarea spellcheck="false" readonly disabled class="to-text"
-                        placeholder="Translated text will appear here...">{{dest_text}}{{'\n'}} {{dest_pronunciation}}</textarea>
+                        placeholder="Translated text will appear here...">{{translation}}</textarea>
                 </div>
             </div>
-            <!-- <button class="btn-tanslator">Translate Text</button> -->
         </div>
     </div>
 </form>
