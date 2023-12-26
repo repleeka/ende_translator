@@ -7,11 +7,11 @@
         <div class="container-translator">
             <div class="wrapper-translator">
                 <div class="text-input">
-                    <textarea name="textToTranslate" spellcheck="false" class="from-text"
-                        placeholder="Enter text to translate" onkeydown="if(event.keyCode==13) {this.form.submit()}"
+                    <textarea name="textToTranslate" spellcheck="false" class="from-text" placeholder="English text"
+                        onkeydown="if(event.keyCode==13) {this.form.submit()}"
                         required>{% if user_input %}{{user_input}}{% endif %}</textarea>
                     <textarea spellcheck="false" readonly disabled class="to-text"
-                        placeholder="Translated text will appear here...">{{translation}}</textarea>
+                        placeholder="Translated German text">{{translation}}</textarea>
                 </div>
             </div>
         </div>
