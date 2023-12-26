@@ -2,6 +2,17 @@
 
 This project implements an English to German translator using Flask. It utilizes a pretrained model obtained from OpenNMT-py and converts it using CTranslate2 and Sentencepiece for translation purposes.
 
+#### Interface
+
+ i. **Home Page**
+ ![Home Page](/img/01.jpg)
+
+ ii. **Before Translation**
+ ![Before Translation](/img/02.jpg)
+
+ iii. **After Translation**
+ ![After Translation](/img/03.jpg)
+
 #### Download the Pretrained Model
 
 - Download the pretrained model from the following link:
